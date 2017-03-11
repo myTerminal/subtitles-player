@@ -1,0 +1,30 @@
+{
+  "name": "subtitles-player",
+  "version": "0.9.0",
+  "description": "A utility to play subtitles in a web-browser",
+  "main": "index.html",
+  "scripts": {
+    "install-globals": "npm install -g grunt-cli bower",
+    "get-vendors": "bower cache clean && bower install && grunt",
+    "develop": "grunt develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myTerminal/subtitles-player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myTerminal/subtitles-player/issues"
+  },
+  "homepage": "https://github.com/myTerminal/subtitles-player#readme",
+  "keywords": [
+    "myTerminal"
+  ],
+  "author": "Mohammed Ismail Ansari <team.terminal@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-watch": "~1.0.0"
+  }
+}

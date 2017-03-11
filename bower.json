@@ -1,0 +1,38 @@
+{
+  "name": "subtitles-player",
+  "description": "A utility to play subtitles in a web-browser",
+  "main": [
+    "index.html",
+    "scripts/main.js",
+    "scripts/subtitles-player.js",
+    "styles/subtitles-player.less"
+  ],
+  "authors": [
+    "Mohammed Ismail Ansari <team.terminal@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "myTerminal"
+  ],
+  "homepage": "https://github.com/myTerminal/subtitles-player",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/myTerminal/subtitles-player.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower.json",
+    "GruntFile.js",
+    "package.json",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "moduleType": [
+    "globals"
+  ]
+}

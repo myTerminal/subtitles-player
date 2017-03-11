@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-family: Roboto;
+}
+html body #stage-container {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+html body #stage-container #stage {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: Arial;
+}
+html body #stage-container #stage:hover {
+  cursor: pointer;
+  background: #00FF00;
+}
+html body #subtitles-container {
+  display: none;
+  height: 100%;
+}
+html body #subtitles-container #subtitles {
+  height: 100%;
+}
+html body #subtitles-container #subtitles .subtitle {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  display: table;
+}
+html body #subtitles-container #subtitles .subtitle span {
+  display: table-cell;
+  vertical-align: middle;
+}
+html body #subtitles-container #subtitles .subtitle.title {
+  font-size: 42px;
+  font-weight: bold;
+}
+html body #subtitles-container #subtitles.fade .subtitle {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transition: 1s opacity;
+  -webkit-transition: 1s opacity;
+  -o-transition: 1s opacity;
+  transition: 1s opacity;
+}
+html body #subtitles-container #subtitles.fade .subtitle.visible {
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+html body #subtitles-container #play-button {
+  position: absolute;
+  bottom: 20%;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+}
+html body #subtitles-container #play-button:hover {
+  box-shadow: 0px 0px 20px #fff;
+}
+html body.playback-mode #stage-container {
+  display: none;
+}
+html body.playback-mode #subtitles-container {
+  display: block;
+}
