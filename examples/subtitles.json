@@ -3,19 +3,19 @@
     "subtitles": [
         {
             "text": "Hello!",
-            "delay": "2000"
+            "time": "2000"
         },
         {
             "text": "This is some long text, so long that it won't be rendered on a single line. Let's see how long it ends up to be on the page",
-            "delay": "5000"
+            "time": "5000"
         },
         {
             "text": "Did I say something?",
-            "delay": "2000"
+            "time": "2000"
         },
         {
             "text": "I didn't",
-            "delay": "3000"
+            "time": "3000"
         }
     ]
 }
