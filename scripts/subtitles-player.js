@@ -8,9 +8,12 @@ var SubtitlesPlayer = function (body, element, subtitlesData, options) {
             switchToPlaybackMode();
 
             bindEvents();
+
             addTitle();
             addLastSubtitle();
-            addSubtitles();
+
+            renderSubtitles();
+            showTitle();
         },
 
         autoShowNextSubtitle = function () {
@@ -18,7 +21,7 @@ var SubtitlesPlayer = function (body, element, subtitlesData, options) {
                 setTimeout(function () {
                     nextSubtitle();
                     autoShowNextSubtitle();
-                }, subtitlesData.subtitles[subtitleNumber].delay);
+                }, subtitlesData.subtitles[subtitleNumber].time);
             }
         },
 
@@ -33,18 +36,22 @@ var SubtitlesPlayer = function (body, element, subtitlesData, options) {
             });
         },
 
+        showTitle = function () {
+            $(".subtitle").first().addClass("title visible");
+        },
+
         switchToSetupMode = function () {
             body.removeClass("playback-mode");
         },
 
         addTitle = function () {
-            element.append("" +
-                           "<div class='subtitle title visible'>" +
-                           "  <span>" + title + "</span>" +
-                           "</div>");
+            subtitlesData.subtitles.unshift({
+                text: title,
+                time: 5000
+            });
         },
 
-        addSubtitles = function () {
+        renderSubtitles = function () {
             subtitlesData.subtitles.forEach(function (s, i) {
                 element.append("" +
                                "<div class='subtitle'>" +
@@ -56,7 +63,7 @@ var SubtitlesPlayer = function (body, element, subtitlesData, options) {
         addLastSubtitle = function () {
             subtitlesData.subtitles.push({
                 text: "Thanks for Watching!",
-                delay: 5000
+                time: 5000
             });
         },
 
