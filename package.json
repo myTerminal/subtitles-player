@@ -5,9 +5,9 @@
   "main": "index.html",
   "scripts": {
     "bower": "bower",
-    "grunt": "grunt",
-    "get-vendors": "bower cache clean && bower install && grunt",
-    "develop": "grunt develop"
+    "gulp": "gulp",
+    "get-vendors": "bower cache clean && bower install && gulp",
+    "develop": "gulp develop"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,10 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bower": "1.8.0",
-    "grunt": "1.0.1",
-    "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-less": "1.4.1",
-    "grunt-contrib-watch": "1.0.0"
+    "gulp": "3.9.1",
+    "gulp-cleancss": "0.2.2",
+    "gulp-concat": "2.6.1",
+    "gulp-less": "3.3.2",
+    "gulp-watch-now": "0.9.1"
   }
 }
