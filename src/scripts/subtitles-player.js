@@ -1,7 +1,8 @@
-/* global $, setTimeout */
+/* global module, require, setTimeout */
 
-var SubtitlesPlayer = function (body, element, subtitlesData, options) {
-    var subtitleNumber = 0,
+module.exports = function (body, element, subtitlesData, options) {
+    var $ = require('jquery'),
+        subtitleNumber = 0,
         title = subtitlesData.title,
 
         init = function () {

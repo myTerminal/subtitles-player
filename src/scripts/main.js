@@ -1,6 +1,8 @@
-/* global $, FileReader, SubtitlesPlayer */
+/* global require, FileReader */
 
-var player;
+var player,
+    $ = require('jquery'),
+    SubtitlesPlayer = require('./subtitles-player.js');
 
 $(document).ready(main);
 
