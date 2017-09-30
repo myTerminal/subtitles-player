@@ -32,7 +32,7 @@ Click the *Play* button to start playback.
 
 ## Dependencies
 
-* jQuery
+* [jQuery](https://www.npmjs.com/package/jquery)
 
 ## To-do
 
