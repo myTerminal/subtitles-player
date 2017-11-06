@@ -24,6 +24,8 @@
     "jquery": "3.2.1"
   },
   "devDependencies": {
+    "babelify": "7.3.0",
+    "babel-preset-env": "1.6.1",
     "browserify": "14.4.0",
     "gulp": "3.9.1",
     "gulp-cleancss": "0.2.2",
