@@ -12,7 +12,7 @@ function main () {
     stage.ondragover = onDragOver;
     stage.ondrop = onDrop;
     stage.ondragend = onDragEnd;
-    
+
     function onDragOver () {
         this.className = 'hover';
         return false;
@@ -24,13 +24,13 @@ function main () {
 
         var file = e.dataTransfer.files[0],
             reader = new FileReader();
-        
+
         reader.onload = function(event) {
             player = new SubtitlesPlayer($("body"),
                                          $("#subtitles"),
                                          JSON.parse(event.target.result));
         };
-        
+
         reader.readAsText(file);
         return false;
     };

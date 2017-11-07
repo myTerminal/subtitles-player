@@ -20,8 +20,7 @@ gulp.task('scripts-debug', function () {
     return browserify({
         entries: 'src/scripts/main.js',
         debug: true
-    })
-        .bundle()
+    }).bundle()
         .pipe(source('subtitles-player.js'))
         .pipe(buffer())
         .pipe(gulp.dest('build/scripts'));
@@ -31,8 +30,7 @@ gulp.task('scripts', function () {
     return browserify({
         entries: 'src/scripts/main.js',
         debug: true
-    })
-        .transform("babelify", { presets: ["env"] })
+    }).transform("babelify", { presets: ["env"] })
         .bundle()
         .pipe(source('subtitles-player.js'))
         .pipe(buffer())
@@ -61,17 +59,21 @@ gulp.task('build', [
 ]);
 
 gulp.task('develop', function () {
-    watchNow.watch(gulp, [
-        'src/styles/**/*.less'
-    ], [
-        'styles'
-    ]);
+    watchNow.watch(gulp,
+                   [
+                       'src/styles/**/*.less'
+                   ],
+                   [
+                       'styles'
+                   ]);
 
-    watchNow.watch(gulp, [
-        'src/scripts/**/*.js'
-    ], [
-        'scripts-debug'
-    ]);
+    watchNow.watch(gulp,
+                   [
+                       'src/scripts/**/*.js'
+                   ],
+                   [
+                       'scripts-debug'
+                   ]);
 });
 
 gulp.task('default', ['build']);
