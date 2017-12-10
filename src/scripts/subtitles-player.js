@@ -1,6 +1,6 @@
 /* global module, require, setTimeout */
 
-module.exports = function (body, element, subtitlesData, options) {
+const subtitlesPlayer = function (body, element, subtitlesData, options) {
     var $ = require('jquery'),
         subtitleNumber = 0,
         title = subtitlesData.title,
@@ -91,3 +91,5 @@ module.exports = function (body, element, subtitlesData, options) {
         nextSubtitle: nextSubtitle
     };
 };
+
+module.exports = subtitlesPlayer;
