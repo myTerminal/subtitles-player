@@ -4,7 +4,6 @@
 [![npm downloads](https://img.shields.io/npm/dt/subtitles-player.svg)](https://www.npmjs.com/package/subtitles-player)  
 [![Build Status](https://travis-ci.org/myTerminal/subtitles-player.svg?branch=master)](https://travis-ci.org/myTerminal/subtitles-player)
 [![Code Climate](https://codeclimate.com/github/myTerminal/subtitles-player.png)](https://codeclimate.com/github/myTerminal/subtitles-player)
-[![Package Quality](http://npm.packagequality.com/shield/subtitles-player.svg)](http://packagequality.com/#?package=subtitles-player)
 [![Coverage Status](https://img.shields.io/coveralls/myTerminal/subtitles-player.svg)](https://coveralls.io/r/myTerminal/subtitles-player?branch=master)
 [![bitHound Overall Score](https://www.bithound.io/github/myTerminal/subtitles-player/badges/score.svg)](https://www.bithound.io/github/myTerminal/subtitles-player)
 [![bitHound Code](https://www.bithound.io/github/myTerminal/subtitles-player/badges/code.svg)](https://www.bithound.io/github/myTerminal/subtitles-player)  
