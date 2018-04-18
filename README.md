@@ -28,10 +28,6 @@ Open the web-page `index.html` in a web-browser that you want to play the subtit
 
 Click the *Play* button to start playback.
 
-## Dependencies
-
-* [jQuery](https://www.npmjs.com/package/jquery)
-
 ## To-do
 
 * (More) animations
