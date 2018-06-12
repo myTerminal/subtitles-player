@@ -30,7 +30,7 @@ gulp.task('scripts', function () {
     return browserify({
         entries: 'src/scripts/main.js',
         debug: true
-    }).transform("babelify", { presets: ["env"] })
+    }).transform("babelify")
         .bundle()
         .pipe(source('subtitles-player.js'))
         .pipe(buffer())
