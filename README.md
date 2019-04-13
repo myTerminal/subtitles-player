@@ -17,8 +17,8 @@ You can try it online: [https://myTerminal.github.io/subtitles-player](https://m
 
 ## Features
 
-* Easy to use: drag-and-drop a JSON file containing subtitles in correct format, no need to remember commands
-* Less dependencies
+* Easy to use: drag-and-drop a JSON file containing subtitles in the correct format, no need to remember commands
+* Very few dependencies
 
 ## How to Use
 
