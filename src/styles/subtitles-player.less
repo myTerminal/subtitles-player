@@ -1,39 +1,4 @@
-.opacity (@opacity: 1) {
-    opacity: @opacity;
-    filter:alpha(opacity=@opacity);
-}
-
-.transition (@seconds: 1s) {
-    -moz-transition: @seconds;
-    -webkit-transition: @seconds;
-    -o-transition: @seconds;
-    transition: @seconds;
-}
-
-.transitions (@prop1: 1s, @prop2: 1s) {
-    -moz-transition: @prop1, @prop2;
-    -webkit-transition: @prop1, @prop2;
-    -o-transition: @prop1, @prop2;
-    transition: @prop1, @prop2;
-}
-
-.round-borders (@borderRadius: 5px) {
-    -moz-border-radius: @borderRadius; 
-    -webkit-border-radius: @borderRadius;
-    border-radius: @borderRadius;
-}
-
-.box-sizing (@sizing: border-box) {
-    -moz-box-sizing: @sizing;
-    box-sizing: @sizing;
-}
-
-.transform(@transform: none) {
-    -webkit-transform: @transform;
-    -moz-transform: @transform;
-    -ms-transform: @transform;
-    transform: @transform;
-}
+@import '../../node_modules/effortless-css/less/all.less';
 
 @font-face {
     font-family: Roboto;
@@ -76,7 +41,7 @@ html {
 
                 &:hover {
                     cursor: pointer;
-                    background: #00FF00;
+                    background: #00ff00;
                 }
             }
         }
@@ -137,7 +102,7 @@ html {
                 line-height: 50px;
 
                 &:hover {
-                    box-shadow: 0px 0px 20px #fff;
+                    box-shadow: 0 0 20px #fff;
                 }
             }
         }
