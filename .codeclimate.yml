@@ -1,3 +1,6 @@
 languages:
   JavaScript: true
   CSS: true
+exclude_paths:
+- "build"
+- "gulpfile.js"
