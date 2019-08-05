@@ -19,7 +19,7 @@
     "myTerminal"
   ],
   "author": "Mohammed Ismail Ansari <team.terminal@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "jquery": "3.2.1"
   },
