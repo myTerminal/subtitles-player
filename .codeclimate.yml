@@ -1,6 +1,7 @@
+version: "2"
 languages:
   JavaScript: true
   CSS: true
-exclude_paths:
+exclude_patterns:
 - "build"
 - "gulpfile.js"
