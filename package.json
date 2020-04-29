@@ -21,7 +21,7 @@
   "author": "Mohammed Ismail Ansari <team.terminal@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jquery": "3.2.1"
+    "jquery": "3.5.0"
   },
   "devDependencies": {
     "babel-preset-env": "1.6.1",
